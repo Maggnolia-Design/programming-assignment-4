@@ -55,3 +55,8 @@ var median=function(x,y,z){
 }
 
 console.log(median(1,10,3))
+
+
+
+
+
