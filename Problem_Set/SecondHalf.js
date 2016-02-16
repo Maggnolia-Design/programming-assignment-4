@@ -29,7 +29,7 @@ console.log(StringLength(myString))
 myArray=[6,2,14,9,5]
 
 var maximum=function(myArray){
-  var largest=0
+  var largest=-Infinity
   for(i=0; i<myArray.length; i++){
     if (myArray[i]>largest){
       largest=myArray[i]
@@ -42,5 +42,28 @@ console.log(maximum(myArray))
 
 /*NINE*/
 
+myArray=[6,2,-3,9,5]
 
+var minimum=function(myArray){
+  var smallest=Infinity
+  for(i=0; i<myArray.length; i++){
+    if (myArray[i]<smallest){
+      smallest=myArray[i]
+    }
+  }
+ return smallest
+}
 
+console.log(minimum(myArray))
+
+/*TEN*/
+
+var halfArray=function(myArray){
+  var half=""
+  for(i=0;i<(myArray.length/2); i++){
+    half=half+myArray[i]
+  }
+  return half
+}
+
+console.log(halfArray(myArray))
